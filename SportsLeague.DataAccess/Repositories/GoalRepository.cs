@@ -25,3 +25,4 @@ public class GoalRepository : GenericRepository<Goal>, IGoalRepository
             .OrderBy(g => g.Minute)
             .ToListAsync();
     }
+}
