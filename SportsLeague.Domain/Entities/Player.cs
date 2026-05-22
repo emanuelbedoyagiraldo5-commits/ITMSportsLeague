@@ -13,6 +13,7 @@ public class Player : AuditBase
     public DateTime BirthDate { get; set; }
     public int Number { get; set; }
     public PlayerPosition Position { get; set; }
+
     // Foreign Key
     public int TeamId { get; set; }
     // Navigation Property
@@ -20,5 +21,6 @@ public class Player : AuditBase
 
     public ICollection<Goal> Goals { get; set; } = new List<Goal>();
     public ICollection<Card> Cards { get; set; } = new List<Card>();
+    public ICollection<MatchLineup> MatchLineups { get; set; } = new List<MatchLineup>();
 
 }
